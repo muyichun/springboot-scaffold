@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: muyichun
+    password: 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+    restart:
+      enabled: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher #兼容springboot2.6以后的版本
+# 持久层
+mybatis-plus:
+  global-config:
+    banner: false
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  type-enums-package: com.guokang.gkhsp.core.enums
+# 配置日志输出的级别
+#logging:
+#  level:
+#    com.guokang.cloudclinic: debug
