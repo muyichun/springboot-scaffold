@@ -62,7 +62,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>1.2.79</version>
         </dependency>
         <!-- 开发/测试工具包括代码生成等 -->
         <dependency>
